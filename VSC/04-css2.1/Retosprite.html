@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Reto Sprite Punk Juan Alzate</title>
+
+        <style>
+        body {
+            background-color: #199e55;
+            border: 2px solid rgb(247, 247, 247);            
+            margin: 0;
+            }
+        main {
+            margin: 190px auto;
+            width: 1029px;
+            margin-top: 0;
+        }
+        div.sprite {
+            background: url(img/spriteweb.png), no-repeat;
+            background-position: -10px -398px;
+            height: 190px;
+            width: 190px;
+            margin: 1px 640px;
+        }
+        menu.Primero {
+            margin: 0px;
+            padding: 0px;
+        }
+        menu.Primero ul {
+            list-style: none;
+            margin: 0px;
+            padding: 0px;
+        }
+        menu.Primero ul li {display: inline-block;}
+        menu.Primero ul li a {
+            background-color: #0f572f;
+            color: rgb(247, 247, 247);            
+            text-decoration: none;
+            display: block;
+            border-bottom: 5px solid rgb(241, 241, 241);
+            padding: 20px 0px;
+            width: 184px;
+            text-align: center;
+            font-weight: bold;     
+        }
+        a.M1 {margin-left: 23px;}
+        menu ul li a:hover {
+            background-color: #092c19;
+            border-bottom: 8px solid #dbce14;
+        }
+        main section {
+            background-color: #146137;
+            height: 242px;
+            margin-top: 35px;
+            width: 1029px;
+            padding: 0;
+        }
+        main section div.sprite1 {
+            background: url(img/spriteweb.png), no-repeat;
+            height: 202px;
+            width: 315px;
+            display: inline-block;
+            margin-top: 15px;
+            margin-left: 15px;
+            border: 2px solid rgb(255, 252, 252);
+            padding: 0;
+        }
+        main section div.sprite1 {background-position: -471px -6px;}
+
+        section.caja div.sprite1 p {
+            background-color: #7473736e;
+            text-align: center;
+            height: 71px; 
+            margin-top: 0;
+            line-height: 68px;
+            font-size: 1.3em;
+            font-weight: bolder;            
+        }
+
+        section div.sp1:hover p {background-color: rgb(236, 236, 236);}
+        section div.sp2:hover p {background-color: rgb(236, 236, 236);} 
+        section div.sp3:hover p {background-color: rgb(236, 236, 236);}         
+
+        section.c1 {
+            padding: 0;            
+            height: 771px;
+        }
+        section.c1 div.Primero.mb{margin-bottom: 2px;}
+
+        section.c1 div.Primero {
+            background-color: rgb(255, 255, 255);
+            margin: 10px 10px;
+            margin-bottom: 8px;           
+            display: inline-block; 
+            padding-bottom: 25px;     
+        }
+        section.c1 div.Primero a.text {
+            display: inline-block;
+            width: 670px;
+            height: 100px;
+            text-decoration: none;
+            color: black;
+            word-spacing: 8px;
+            text-align: justify;
+            font-size: medium;
+            line-height: 35px;
+            padding-top: 15px;                    
+        }
+        section.c1 div.Primero div.logo2 {
+            background: url(img/spriteweb.png), no-repeat;
+            height: 82px;
+            width: 83px;
+            margin: 55px 40px;
+            display: inline-block;            
+        }
+        section.c1 div.Primero div.logo2 {background-position: -300px -500px;}
+        
+        section.c1 div.Primero div.lata {
+            background: url(img/spriteweb.png), no-repeat;
+            height: 167px;
+            width: 101px;
+            margin: 10px 20px;
+            display: inline-block;
+            margin-right: 47px;
+        }
+        section.c1 div.Primero div.lata {background-position: -90px -200px;}
+
+        section.c1 div.Primero:hover a.hov1{color: #20a35b;}
+        section.c1 div.Primero:hover a.hov2{color: #20a35b;}
+        section.c1 div.Primero:hover a.hov3{color: #20a35b;}
+
+        section.cajassprites {
+            background-color: rgb(255, 255, 255);
+            height: 298px;
+        }
+        section.cajassprites menu.segundo {            
+            margin: 0px;
+            padding: 0px;
+        }
+        menu.segundo ul {
+            list-style: none;
+            margin: 0px;
+            padding: 0px;
+        }
+        menu.segundo ul li {display: inline-block;}
+        menu.segundo ul li a {
+            background-color: rgb(255, 255, 255);
+            color: black;            
+            text-decoration: none;
+            display: block;
+            border-bottom: 5px solid rgb(255, 255, 255);
+            padding: 20px 0px;
+            width: 150px;
+            text-align: center;
+            font-weight: normal;              
+        }
+        menu.segundo ul li a.M12.move {margin-left: 110px;}
+        a.M12 {margin-left: 0px;}
+        menu.segundo ul li a:hover {border-bottom: 7px solid #1a663b;}
+        
+        main section.cajassprites div.Spritesbotellas{
+            background: url(img/spriteweb.png), no-repeat;
+            height: 190px;
+            width: 350px;
+            display: block;
+            margin-left: 309px;
+        }
+        main section.cajassprites div.Spritesbotellas{background-position: -450px -415px;}
+    </style>
+
+</head>
+    <body>
+        <div class="sprite"></div>
+        <main>
+            <menu class="Primero">
+
+                <ul>
+                    <li><a href="#">INICIO</a></li>
+                    <li><a href="#" class="M1">NOSOTROS</a></li>
+                    <li><a href="#" class="M1">PORTAFOLIO</a></li>
+                    <li><a href="#" class="M1">SERVICIOS</a></li>
+                    <li><a href="#" class="M1">CONTACTO</a></li>
+                </ul>
+                
+            </menu>
+            <section class="caja">
+                <div class="sprite1 sp1">
+                    <p>Sprite 1</p>
+                </div>
+                <div class="sprite1 sp2">
+                    <p>Sprite 2</p>
+                </div>
+                <div class="sprite1 sp3">
+                    <p>Sprite 3</p>
+                </div>
+            </section>
+
+
+            <section class="c1">
+                <div class="Primero mb">
+
+                    <div class="logo2"></div>
+
+                    <a href="#" class="text hov1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi veritatis harum eum, dolores eveniet doloremque reprehenderit sed reiciendis laudantium modi ducimus est totam, hic non quidem officia aliquid? Fugiat, mollitia!eveniet doloremque reprehenderit sed reiciendis laudantium modi ducimus est totam, eveniet doloremque reprehenderit sed reiciendis laudantium modi ducimus est totam, 
+                    </a>
+
+
+                    <div class="lata"></div>
+
+                </div>
+
+                <div class="Primero mb">
+
+                    <div class="logo2"></div>
+
+                    <a href="#" class="text hov2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi veritatis harum eum, dolores eveniet doloremque reprehenderit sed reiciendis laudantium modi ducimus est totam, hic non quidem officia aliquid? Fugiat, mollitia!eveniet doloremque reprehenderit sed reiciendis laudantium modi ducimus est totam, eveniet doloremque reprehenderit sed reiciendis laudantium modi ducimus est totam, 
+                    </a>
+
+                    <div class="lata"></div>
+                </div>
+
+                <div class="Primero">
+
+                    <div class="logo2"></div>
+
+                    <a href="#" class="text hov3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi veritatis harum eum, dolores eveniet doloremque reprehenderit sed reiciendis laudantium modi ducimus est totam, hic non quidem officia aliquid? Fugiat, mollitia!Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi veritatis harum eum, dolores eveniet doloremque reprehenderit sed reiciendis laudantium modi ducimus est totam, hic non quidem officia aliquid? Fugiat, mollitia! consectetur adipisicing elit. Nisi veritatis harum eum, dolores eveniet doloremque reprehenderit sed reiciendis laudantium modi ducimus est totam, 
+                    </a>
+
+
+                    <div class="lata"></div>
+
+                </div>
+            </section>
+
+
+            <section class="cajassprites">
+
+                <div class="Spritesbotellas"></div>
+                
+                <menu class="segundo">
+                    
+                    <ul>
+                        <li><a href="#" class="Ml2 move">  </a></li>
+                        <li><a href="#" class="Ml2 move"> INICIO </a></li>
+                        <li><a href="#" class="Ml2 move"> NOSOTROS </a></li>
+                        <li><a href="#" class="Ml2 move"> PORTAFOLIO </a></li>
+                        <li><a href="#" class="Ml2 move"> SERVICIOS </a></li>
+                        <li><a href="#" class="Ml2 move"> CONTACTO </a></li>
+                       
+                        
+                    </ul>
+
+                </menu>
+            </section>
+        </main>
+    </body>
+</html>
